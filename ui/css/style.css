@@ -1,0 +1,332 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(194, 190, 190);
+  text-decoration: none;
+}
+
+.footer-link {
+  margin: 1rem;
+  font-size: 0.95rem;
+}
+
+.container {
+  padding: 2rem 15rem;
+  margin: 0;
+}
+
+.text-large {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.red-line {
+  text-decoration-line: underline;
+  text-decoration-color: brown;
+  text-decoration-style: solid;
+}
+
+.center {
+  text-align: center
+}
+
+.white {
+  color: whitesmoke
+}
+
+.btn {
+  display: block;
+}
+
+.btn-small {
+  color: white;
+  width: 6rem;
+  padding: 0.6rem;
+  background-color: rgb(26, 179, 154);
+  margin: auto;
+  border: none;
+}
+
+.btn-transparent {
+  border: 0.1rem solid rgb(26, 179, 154);
+  ;
+  background: none;
+  border-radius: 0.3rem;
+}
+
+nav {
+  /* border: red 1px solid; */
+}
+
+.text-xxl {
+  font-family: 'Duplicate Sans', 'Lausanne', 'Radio Grotesk', 'Lucida Sans', 'Lucida Sans Regular';
+  font-size: 2rem;
+  margin: 0;
+}
+
+#s1-header {
+  height: 35.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/fego/image/upload/v1570623759/chef-folio/chhcjkb_jzm2ml.jpg");
+  background-size: cover;
+}
+
+#s2-featured,
+#s4-topchef {
+  /* border: 1px solid rgb(54, 5, 82); */
+  background-color: rgb(252, 249, 249);
+}
+
+#s3-recipe {
+  /* border: 1px solid rgb(30, 102, 107); */
+  background-color: white;
+  /* height: 25.5rem; */
+}
+
+#s4-footer {
+  color: white;
+  background-color: rgb(49, 49, 49);
+}
+
+.daily-recipe {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795__340.jpg");
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  height: 32rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.85rem;
+  margin-bottom: 2.4rem;
+}
+
+/* .daily-recipe::before {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  background-color: rgba(247, 203, 7, 0.1);
+} */
+
+/* .daily-recipe {
+  position: relative
+}
+
+.daily-recipe:hover::before {
+  opacity: 0;
+} */
+
+.recipe-item {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 2.3rem;
+  margin-bottom: 2.4rem;
+}
+
+.chef-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 2.3rem;
+  padding: 1rem 3.5rem;
+  margin-top: 1.85rem;
+  justify-items: center;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(42rem, 1fr));
+  grid-template-rows: 1fr, 1fr;
+  height: 32rem;
+}
+
+#h1 {
+  grid-row: 1/2;
+}
+
+#h2 {
+  grid-row: 6/12;
+
+  align-items: center;
+}
+
+.nav-grid,
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  padding-bottom: 2rem;
+  /* min-width: 200px; */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+}
+
+.card-img {
+  height: 33vh;
+  width: 100%;
+}
+
+.chef {
+  /* border: 1px solid red; */
+  max-width: 150px;
+  background-color: rgb(252, 249, 249);
+}
+
+.chef-img {
+  display: block;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%
+}
+
+@media (max-width: 1260px) {
+
+  .header-grid,
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(15rem, 1fr));
+    grid-template-rows: 1fr, 1fr;
+  }
+
+  .header-grid {
+    height: 32rem;
+    padding: 2rem 4rem;
+    margin: 0;
+  }
+
+  .nav-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(18rem, 1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
+  }
+
+  #h1 {
+    grid-row: 1/2;
+  }
+
+  #h2 {
+    grid-row: 7/12;
+
+    align-items: center;
+  }
+
+  .chef-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2rem;
+    padding: 1rem 3.5rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(18rem, 1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+
+  .chef-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 2.3rem;
+    padding: 1rem 3.5rem;
+    margin-top: 1.85rem;
+    justify-items: center;
+  }
+
+  div.nav-wrapper {
+    display: inline-flex;
+    padding: 0;
+  }
+
+  .container {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto)
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .container {
+    padding: 2rem 6rem;
+  }
+}
+
+@media (max-width: 411px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+}
