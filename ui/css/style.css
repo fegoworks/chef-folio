@@ -112,6 +112,10 @@ nav {
   margin-bottom: 2.4rem;
 }
 
+.text-height {
+  line-height: 1.75rem;
+}
+
 /* .daily-recipe::before {
   position: absolute;
   content: ' ';
