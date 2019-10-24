@@ -15,7 +15,7 @@ a {
 }
 
 .container {
-  padding: 2rem 15rem;
+  padding: 2rem 10rem;
   margin: 0;
 }
 
@@ -37,31 +37,64 @@ a {
 }
 
 .center {
-  text-align: center
+  text-align: center;
+}
+
+.d-text {
+  padding: 7rem;
+  font-size: 4.5rem;
 }
 
 .white {
-  color: whitesmoke
+  color: whitesmoke;
+}
+
+.success {
+  background: rgb(40, 119, 40);
 }
 
 .btn {
   display: block;
+  color: white;
+  padding: 0.5rem;
+  background-color: rgb(26, 179, 154);
+  margin: auto;
+  text-align: center;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-inline {
+  color: white;
+  padding: 0.35rem;
+  margin: auto;
+  text-align: center;
 }
 
 .btn-small {
-  color: white;
-  width: 6rem;
-  padding: 0.6rem;
-  background-color: rgb(26, 179, 154);
-  margin: auto;
-  border: none;
+  width: 5rem;
+}
+
+.btn-medium {
+  width: 6.5rem;
+}
+
+.btn-large {
+  width: 9rem;
 }
 
 .btn-transparent {
   border: 0.1rem solid rgb(26, 179, 154);
-  ;
   background: none;
   border-radius: 0.3rem;
+}
+
+.icon {
+  font-size: 3.5rem;
 }
 
 nav {
@@ -69,14 +102,16 @@ nav {
 }
 
 .text-xxl {
-  font-family: 'Duplicate Sans', 'Lausanne', 'Radio Grotesk', 'Lucida Sans', 'Lucida Sans Regular';
+  font-family: 'Duplicate Sans', 'Lausanne', 'Radio Grotesk', 'Lucida Sans',
+    'Lucida Sans Regular';
   font-size: 2rem;
   margin: 0;
 }
 
 #s1-header {
   height: 35.5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/fego/image/upload/v1570623759/chef-folio/chhcjkb_jzm2ml.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://res.cloudinary.com/fego/image/upload/v1570623759/chef-folio/chhcjkb_jzm2ml.jpg');
   background-size: cover;
 }
 
@@ -99,8 +134,8 @@ nav {
 
 .daily-recipe {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795__340.jpg");
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795__340.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,11 +258,10 @@ nav {
   width: 7.5rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 @media (max-width: 1260px) {
-
   .header-grid,
   .footer-grid {
     display: grid;
@@ -275,6 +309,15 @@ nav {
     align-items: center;
     justify-content: center;
   }
+
+  .container {
+    padding: 1rem 7rem;
+  }
+
+  .d-text {
+    padding: 4rem;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -308,7 +351,11 @@ nav {
   }
 
   .container {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
+  }
+
+  .d-text {
+    padding: 0.5rem;
   }
 }
 
@@ -316,7 +363,7 @@ nav {
   .recipe-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto)
+    grid-template-rows: repeat(2, auto);
   }
 
   .card-grid {
@@ -325,12 +372,12 @@ nav {
   }
 
   .container {
-    padding: 2rem 6rem;
+    padding: 1rem 4rem;
   }
 }
 
 @media (max-width: 411px) {
   .container {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
   }
 }
